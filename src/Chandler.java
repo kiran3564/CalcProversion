@@ -26,6 +26,12 @@ public class Chandler implements ActionListener{
 			
 			result = a-b;
 			cf.getAnswerLbl().setText("Answer = "+ result);
+		}else if (e.getActionCommand().equalsIgnoreCase("multiply")) {
+			result = a*b;
+			cf.getAnswerLbl().setText("Answer ="+ result);
+		}else if(e.getActionCommand().equalsIgnoreCase("divide")) {
+			result = a/b;
+			cf.getAnswerLbl().setText("Answer ="+ result);
 		}
 	}
 

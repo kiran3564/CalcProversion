@@ -71,8 +71,20 @@ public class Cframe  extends Frame{
 			}
 		});*/
 		
+		Button MultiplyButton = new Button("Multiply");
+		MultiplyButton.setBounds(220,120,80,30);
+		add(MultiplyButton);
+		MultiplyButton.addActionListener(new Chandler(this));
+		
+		
+		Button DivideButton = new Button("Divide");
+		DivideButton.setBounds(320,120,80,30);
+		add(DivideButton);
+		DivideButton.addActionListener(new Chandler(this));
 			
 		// close the Calculator
+		
+		
 		this.addWindowListener(new WindowAdapter() {
 		 @Override
 		public void windowClosing(WindowEvent e) {
